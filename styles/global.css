@@ -104,6 +104,11 @@ a:not(.social):not(.btn):hover {
   color: transparent;
 }
 
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
 ul[role="list"] {
   list-style: none;
 }

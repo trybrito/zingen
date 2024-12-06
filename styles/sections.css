@@ -1,0 +1,33 @@
+#smartphones-img {
+  background: url(../assets/icons/mobile-hero.svg) top / cover;
+  margin-top: 5rem;
+}
+
+section {
+  & strong {
+    display: block;
+    font: var(--fw-medium) var(--fs-sm) / 100% var(--font-family);
+    color: var(--brand-color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  & h2 {
+    margin-top: 0.5rem;
+  }
+
+  & p {
+    margin-top: 0.5rem;
+    color: var(--text-color-secondary);
+  }
+}
+
+#about > div {
+  gap: 2rem;
+}
+
+@media (width >= 1280px) {
+  #smartphones-img {
+    display: none;
+  }
+}
