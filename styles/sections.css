@@ -22,10 +22,6 @@ section {
   }
 }
 
-#about > div {
-  gap: 2rem;
-}
-
 @media (width >= 1280px) {
   #smartphones-img {
     display: none;
