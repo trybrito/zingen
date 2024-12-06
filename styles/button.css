@@ -1,0 +1,55 @@
+.btn {
+  --btn-bg-color: var(--text-color-primary);
+  --btn-color: var(--background-color);
+  border: 0;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: fit-content;
+
+  border-radius: 0.5rem;
+  font: var(--fw-medium) var(--fs-base) / 1.5rem var(--font-family);
+  cursor: pointer;
+
+  background: var(--btn-bg-color);
+  color: var(--btn-color);
+  padding: 0.75rem 1.5rem;
+}
+
+.btn:hover {
+  --btn-bg-color: var(--brand-gradient);
+}
+
+.btn[aria-label] {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0.09375rem;
+    background-color: var(--background-color);
+    border-radius: inherit;
+  }
+
+  &::after {
+    position: relative;
+    z-index: 1;
+
+    content: attr(aria-label);
+    background: var(--btn-bg-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+.btn-sm {
+  font-size: var(--fs-sm);
+  padding: 0.5rem 1rem;
+}
+
+.btn-lg {
+  font-size: 1.125rem;
+  padding: 1rem 2rem;
+}
