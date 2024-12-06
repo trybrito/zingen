@@ -10,7 +10,6 @@
 
   border-radius: 0.5rem;
   font: var(--fw-medium) var(--fs-base) / 1.5rem var(--font-family);
-  cursor: pointer;
 
   background: var(--btn-bg-color);
   color: var(--btn-color);
