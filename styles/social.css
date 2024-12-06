@@ -6,8 +6,8 @@ a.social {
   width: 1.5rem;
   height: 1.5rem;
 
-  background-clip: initial;
-  -webkit-background-clip: initial;
+  /* background-clip: initial;
+  -webkit-background-clip: initial; */
 
   &[aria-label="tiktok"] {
     --bg-img: url(../assets/icons/tiktok.svg);

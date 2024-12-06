@@ -13,7 +13,6 @@
 
   background: var(--btn-bg-color);
   color: var(--btn-color);
-  padding: 0.75rem 1.5rem;
 }
 
 .btn:hover {
@@ -51,4 +50,16 @@
 .btn-lg {
   font-size: 1.125rem;
   padding: 1rem 2rem;
+}
+
+@media (width >= 1280px) {
+  .btn-sm {
+    font-size: var(--fs-base);
+    padding: 0.75rem 1.5rem;
+  }
+
+  .btn-lg {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
 }

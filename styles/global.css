@@ -95,7 +95,9 @@ button {
   cursor: pointer;
 }
 
-a:hover {
+/* a:hover {} */
+
+a:not(.social):not(.btn):hover {
   background: var(--brand-gradient);
   background-clip: text;
   -webkit-background-clip: text;

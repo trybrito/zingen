@@ -8,21 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zingen - Karaokê | Home</title>
 
-    <link rel="stylesheet" href="./styles/index.css" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.svg"
+      type="image/x-svg"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
-    <ul>
-      <li>
-        <a href="#" class="social" aria-label="tiktok"></a>
-        <a href="#" class="social" aria-label="instagram"></a>
-        <a href="#" class="social" aria-label="twitter"></a>
-        <a href="#" class="social" aria-label="discord"></a>
-      </li>
-    </ul>
+    <header class="container py-base">
+      <nav class="flex items-center gap-1.5">
+        <a href="#">
+          <img
+            src="./assets/icons/favicon.svg"
+            alt="Logotipo. Escrito 'Zingen' em letras brancas"
+          />
+        </a>
+        <a href="#about" class="desktop-only">Conheça o app</a>
+        <a href="#features" class="desktop-only">Funcionalidades</a>
+        <a href="#pricing" class="desktop-only">Planos e preços</a>
+        <a href="#download" class="btn btn-sm">Baixar agora</a>
+      </nav>
+    </header>
   </body>
 </html>
