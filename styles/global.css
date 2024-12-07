@@ -53,6 +53,7 @@ html {
   color: var(--text-color-primary);
   line-height: 160%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
