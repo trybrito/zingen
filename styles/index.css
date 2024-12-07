@@ -9,3 +9,4 @@
 @import url(./components/cards.css);
 @import url(./components/desktop-features-section.css) (width >= 1280px);
 @import url(./components/pricing.css);
+@import url(./components/download.css);
