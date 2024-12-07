@@ -1,0 +1,119 @@
+#pricing {
+  --fs-price: 2rem;
+
+  & header {
+    text-align: center;
+  }
+
+  & .cards {
+    margin-top: 2rem;
+  }
+
+  & .premium {
+    position: relative;
+    padding: 2px;
+
+    &::before {
+      content: "";
+      background: var(--brand-gradient);
+      position: absolute;
+      inset: 0;
+      border-radius: 1.5rem;
+      z-index: -1;
+    }
+
+    & .card {
+      padding-top: 4.5rem;
+
+      & > span {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        padding: 0.75rem 2rem;
+        background: var(--brand-gradient);
+
+        border-top-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+
+        font: 600 var(--fs-sm) var(--font-family);
+        letter-spacing: 0.08em;
+        color: var(--background-color);
+      }
+    }
+  }
+
+  & .card {
+    & h3 {
+      font-size: 1.25rem;
+      margin-top: 0;
+    }
+
+    & p {
+      margin-top: 0.25rem;
+    }
+
+    & zin-pricing {
+      display: block;
+      padding-block: 1.5rem;
+      font: var(--fw-extrabold) var(--fs-price) / 120% var(--font-family);
+
+      & small {
+        font: var(--fw-base) 1rem/125% var(--font-family);
+        color: var(--text-color-secondary);
+      }
+    }
+
+    & .btn {
+      width: 100%;
+
+      &::before {
+        background-color: var(--surface-color);
+      }
+    }
+
+    & .separator {
+      height: 1px;
+      margin-block: 2rem;
+      background: radial-gradient(
+        var(--text-color-secondary),
+        var(--surface-color) 70%
+      );
+    }
+
+    & li {
+      color: var(--text-color-secondary);
+      background: url(../../assets/icons/check.svg) no-repeat;
+      padding-left: 2rem;
+    }
+
+    & ul + small {
+      display: block;
+      margin-top: 1.5rem;
+      font-size: 0.875rem;
+      color: var(--text-color-secondary);
+    }
+  }
+
+  @media (width >= 1280px) {
+    --fs-price: 2.5rem;
+
+    & .btn-md {
+      font-size: var(--fs-base);
+      padding: 0.75rem 1.5rem;
+    }
+
+    & header {
+      max-width: 50rem;
+      margin-inline: auto;
+    }
+
+    & .premium .card {
+      padding-bottom: 6rem;
+    }
+
+    & .card:nth-child(3) .separator {
+      margin-block: 1.5rem;
+    }
+  }
+}

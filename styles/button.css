@@ -5,7 +5,7 @@
 
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   width: fit-content;
 
   border-radius: 0.5rem;
@@ -25,7 +25,7 @@
   &::before {
     content: "";
     position: absolute;
-    inset: 0.09375rem;
+    inset: 1px;
     background-color: var(--background-color);
     border-radius: inherit;
   }
